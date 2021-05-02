@@ -30,13 +30,11 @@ import java.lang.String;
 
 public class MAIN {
     public static void main(String[] args){
-        String s = "здесь точно больше шестнадцати букавак";
-        String s1 = "12345678901234567";
-        char[] c = s.toCharArray();
-        ListString list_1 = new ListString(s);
-        ListString list_2 = new ListString(s1);
+        String str = "12345678901234567890";
+        ListString list_1 = new ListString(str);
+        ListString list_2 =  new ListString(list_1);
+        list_1.print();
         list_2.print();
-        list_2 = list_2.substring(1,17);
-        list_2.print();
+        
     }
 }
